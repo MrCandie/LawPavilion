@@ -4,15 +4,14 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA2TdbAfCDBcvaeT_kG9I5zM8m1FMUsBrg",
-  authDomain: "frulo-ccf37.firebaseapp.com",
-  projectId: "frulo-ccf37",
-  storageBucket: "frulo-ccf37.firebasestorage.app",
-  messagingSenderId: "341968609556",
-  appId: "1:341968609556:web:eb8691b612d2f8d7ed2201",
-  measurementId: "G-8PCBBQY0DG",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
-
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
