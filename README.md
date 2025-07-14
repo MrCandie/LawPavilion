@@ -31,24 +31,25 @@ A simple, responsive admin dashboard built with **React**, **Vite**, **Tailwind 
    npm run test
    ```
 
-⚖️ Decisions & Trade-Offs
-Tailwind for styling: We chose Tailwind CSS for rapid styling and dark mode support out of the box.
+# ⚖️ Decisions & Trade-Offs
 
-No backend API: Mocked logic and localStorage are used instead of a real backend for simplicity.
+- Tailwind for styling: We chose Tailwind CSS for rapid styling and dark mode support out of the box.
 
-Dark mode toggle: Uses Tailwind's dark: class strategy, storing preference in localStorage.
+- No backend API: Mocked logic and localStorage are used instead of a real backend for simplicity.
 
-Minimal Firebase setup: Authentication is handled with Firebase Auth; Firestore is set up but not heavily used.
+- Dark mode toggle: Uses Tailwind's dark: class strategy, storing preference in localStorage.
 
-Testing: Vitest was used over Jest for better Vite integration. Some DOM-based tests required adding proper id and htmlFor props to be accessible by getByLabelText().
+- Minimal Firebase setup: Authentication is handled with Firebase Auth; Firestore is set up but not heavily used.
 
-🚀 Features
-🔒 Firebase Authentication
+- Testing: Vitest was used over Jest for better Vite integration. Some DOM-based tests required adding proper id and htmlFor props to be accessible by getByLabelText().
 
-🌗 Light/Dark Mode Toggle
+- 🚀 Features
+- 🔒 Firebase Authentication
 
-📊 Dashboard with metrics and charts
+- 🌗 Light/Dark Mode Toggle
 
-📱 Responsive Sidebar (with slide-in on mobile)
+- 📊 Dashboard with metrics and charts
 
-✅ Unit tests with Vitest
+- 📱 Responsive Sidebar (with slide-in on mobile)
+
+- ✅ Unit tests with Vitest
