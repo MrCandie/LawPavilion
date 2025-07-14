@@ -36,7 +36,7 @@ export default function Login() {
           phoneNumber: user?.phoneNumber,
         })
       );
-      toast.success("Sign up successful");
+      toast.success("Log In successful");
       navigate("/");
       setLoading(false);
     } catch (error) {
